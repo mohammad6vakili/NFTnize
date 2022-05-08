@@ -1,0 +1,60 @@
+.creator {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20.5rem;
+  min-height: 16rem;
+  padding: 1.8rem 2.2rem;
+  cursor: pointer;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(360deg, #0b0b0b 0%, rgba(11, 11, 11, 0) 94.29%);
+    opacity: 0.7;
+  }
+}
+
+// loading
+.creator-loading {
+  @extend .creator;
+  display: unset;
+  padding: 0;
+  cursor: default;
+
+  &::after {
+    content: unset;
+  }
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.artworks {
+  font-size: 1.3rem;
+  color: var(--color-white);
+  z-index: 1;
+}
+
+.id {
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  color: var(--color-light-blue);
+}

@@ -1,0 +1,22 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.main {
+  align-self: center;
+  width: 100%;
+  z-index: 2;
+  margin-top: 8rem;
+
+  &--container {
+    max-width: 111.2rem;
+    padding: 6.5rem 1.6rem;
+  }
+
+  &--container-full-width {
+    max-width: 139.2rem;
+    padding: 5rem 1.6rem;
+  }
+}

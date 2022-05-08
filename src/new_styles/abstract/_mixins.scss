@@ -1,0 +1,43 @@
+/*
+  * Display helpers
+  - Device        Code        Range
+  - Extra small   xs          < 600px
+  - Small         sm          600px > < 960px
+  - Medium        md          960px > < 1264px
+  - Large         lg          1264px > < 1537px
+  - Extra large   xl          1537px > < 1904px
+  - Super large   sl          > 1904px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 960px) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media only screen and (max-width: 1264px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media only screen and (max-width: 1537px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media only screen and (max-width: 1904px) {
+      @content;
+    }
+  }
+  @if $breakpoint == sl {
+    @media only screen and (min-width: 1904px) {
+      @content;
+    }
+  }
+}

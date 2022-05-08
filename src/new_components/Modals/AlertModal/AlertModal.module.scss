@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.6rem;
+  min-width: 300px;
+}
+
+.title {
+  color: var(--color-light-blue);
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.desc {
+  text-align: center;
+}
+.nft {
+  height: 18rem;
+  width: 18rem;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 10rem;
+  border: 0.6rem solid #202054;
+  margin-bottom: 4.1rem;
+}
+
+.cta {
+  margin-top: 1.9rem;
+  margin-bottom: 1.8rem;
+}
+
+.info {
+  font-size: 1.3rem;
+  color: #67677e;
+  line-height: 1.6;
+  text-align: center;
+}

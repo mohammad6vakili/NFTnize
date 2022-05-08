@@ -1,0 +1,12 @@
+.assets-container {
+    margin: 5rem
+}
+
+.assets-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(41rem, 41rem));
+    grid-gap: 2.5rem;
+    justify-content: center;
+    margin: 5rem;
+}

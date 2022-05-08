@@ -1,0 +1,96 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  width: 100%;
+  position: relative;
+  padding: 7.7rem 1.6rem 6.8rem 1.6rem;
+  margin-top: 8rem;
+
+  @include respond(sm) {
+    padding: 6rem 2rem;
+    padding-bottom: 8rem;
+  }
+
+  @include respond(xs) {
+    padding: 4rem 2rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 79.4rem;
+  margin: 0 auto;
+
+  @include respond(sm) {
+    max-width: 60rem;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 1;
+  letter-spacing: -0.5rem;
+  color: var(--bg-main-color);
+  display: block;
+  margin: 0;
+  -webkit-text-stroke: 0.15rem var(--color-light-blue);
+  text-shadow: 0 0 0.6rem var(--color-light-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  @include respond(sm) {
+    font-size: 8rem;
+  }
+
+  @include respond(xs) {
+    font-size: 5rem;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: 4.3rem;
+
+  @include respond(xs) {
+    margin-bottom: 3rem;
+  }
+}
+
+.search-input {
+  align-self: stretch;
+
+  & input::placeholder {
+    color: #c6c6eb;
+    font-weight: 400;
+  }
+}
+
+.wave {
+  color: var(--color-green);
+  position: absolute;
+  z-index: -2;
+  bottom: -14rem;
+  opacity: 0.3;
+  width: 100%;
+  left: 0;
+
+  & > svg {
+    height: 41rem;
+    width: 100%;
+  }
+
+  & > div {
+    background: linear-gradient(to bottom, transparent, var(--bg-main-color));
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

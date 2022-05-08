@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font-family);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--main-font-family);
+  min-height: 100vh;
+}
+
+#root > div{
+  background-color: var(--bg-main-color);
+  color: var(--color-white);
+}
+
+a {
+  color: inherit;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+img,
+video {
+  // background-color: #c2c2c2;
+  overflow: hidden;
+  font-size: 1.3rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// react collapse
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}

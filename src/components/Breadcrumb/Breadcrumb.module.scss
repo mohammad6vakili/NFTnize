@@ -1,0 +1,41 @@
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  & > * + * {
+    margin-left: 1rem;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  &:after {
+    content: '/';
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #838383;
+  }
+
+  &:last-of-type {
+    color: #838383;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    color: #bd7839;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.2rem;
+    }
+  }
+}

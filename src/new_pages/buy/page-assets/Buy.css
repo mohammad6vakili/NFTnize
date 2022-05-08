@@ -1,0 +1,408 @@
+.mv-buy-main-top {
+  width: 100%;
+  display: flex;
+  padding: 0 40px;
+  margin-top: 100px;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: url(/src/new_pages/landing/page-assets/landing-top-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mv-buy-main-top > div:nth-child(1) {
+  border: 1px solid rgb(0, 51, 255);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.mv-buy-main-top > div:nth-child(1) > div {
+  width: 370px !important;
+  height: 370px !important;
+  cursor: pointer;
+}
+.mv-buy-main-top > div:nth-child(1) > div > img {
+  width: 100% !important;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.4);
+  height: 100% !important;
+}
+.mv-buy-main-top > div:nth-child(2) {
+  width: 100%;
+  background: rgba(22, 22, 22, 0.7);
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+}
+.mv-buy-main-top > div:nth-child(2) {
+
+}
+
+
+
+
+
+
+
+
+
+
+.mv-buy-main-top > div:nth-child(2) {
+  width: 100%;
+  min-height: 35vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: rgba(22, 22, 22, 0.7);
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.mv-buy-main-top > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(1) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 106px;
+  letter-spacing: -0.03em;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) svg {
+  margin-right: 10px;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+  display: flex;
+  margin-top: 30px;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 0 0;
+}
+
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(2) {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 10px;
+  min-width: 310px;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mv-buy-main-top > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mv-buy-bid-modal-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.mv-buy-bid-modal-btn button:hover,
+.mv-buy-bid-modal-btn button:focus,
+.mv-buy-bid-modal-btn button {
+  background-color: black !important;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.mv-buy-bid-modal-body {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mv-buy-bid-modal-body > div:nth-child(1) {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+.mv-buy-bid-modal-body > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.mv-buy-bid-modal-body > div:nth-child(2) img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.mv-buy-bid-modal-body > div:nth-child(3) {
+  margin-top: 30px;
+}
+.mv-buy-bid-modal-body > div:nth-child(3) > div:nth-child(1) {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.mv-buy-bid-modal-body > div:nth-child(3) > input:nth-child(2) {
+  height: 40px;
+  background-color: transparent !important;
+}
+.mv-buy-bid-modal-body > div:last-child {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.mv-buy-progress-wrapper {
+  width: 100% !important;
+  padding: 0 50px;
+}
+.mv-buy-auction-timer > div {
+  color: white !important;
+  font-size: 22px !important;
+  padding-left: 0 !important;
+  background-color: unset !important;
+  box-shadow: none !important;
+}
+.mv-buy-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  margin-top: 30px;
+  max-width: 1950px;
+}
+.mv-buy-list > div:nth-child(1) {
+  font-weight: 900;
+  font-size: 28px;
+  color: #ffffff;
+}
+.mv-buy-list > div:nth-child(2) {
+  width: 100%;
+  height: 400px;
+  scrollbar-width: none !important;
+  overflow-y: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background: #161616;
+  box-shadow: -6px 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px !important;
+}
+.mv-buy-list > div:nth-child(2)::-webkit-scrollbar {
+  display: none !important;
+}
+.mv-buy-list-item {
+  width: 100%;
+  min-height: 60px !important;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.104);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.mv-buy-list-item-light {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.mv-buy-list-item > div {
+  width: 40%;
+  text-align: center;
+}
+.mv-buy-list-item > div:last-child {
+  width: 20%;
+}
+.mv-buy-list-item > div:last-child button:active,
+.mv-buy-list-item > div:last-child button:focus,
+.mv-buy-list-item > div:last-child button {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: unset !important;
+}
+.mv-buy-list-item > div:last-child img {
+  cursor: pointer;
+  margin: 0 10px;
+}
+.mv-buy-list-light > div:nth-child(1) {
+  color: #000000;
+}
+.mv-buy-list-light > div:nth-child(2) {
+  color: #000000;
+  background: #f1f1f1;
+  box-shadow: -6px 6px 15px rgba(0, 0, 0, 0.1);
+}
+.mv-fullscreen-modal-wrapp > div {
+  width: 100vw !important;
+}
+.mv-fullscreen-modal {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #000000cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.mv-fullscreen-modal img {
+  width: unset !important;
+  height: unset !important;
+  margin: 0 !important;
+}
+.mv-fullscreen-modal button {
+  right: 30px !important;
+  top: 30px !important;
+}
+.mv-detail-modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: unset !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent;
+  border: none !important;
+  cursor: pointer;
+  outline: none;
+}
+.mv-fullscreen-modal-light {
+  background-color: #ffffffcc;
+}
+.mv-detail-modal-close-light path {
+  fill: black;
+}
+/* --------------------------------------media queries----------------------------------- */
+@media only screen and (min-width: 1500px) {
+  .mv-buy-main-top > div:nth-child(1) > div {
+    width: 550px !important;
+    height: 550px !important;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 1250px) {
+  .mv-buy-main-top > div:nth-child(2) {
+    flex-direction: column;
+  }
+  .mv-buy-main-top > div:nth-child(2) > div {
+    width: 100% !important;
+    margin-bottom: 50px;
+    align-items: center !important;
+  }
+  .mv-buy-main-top > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .mv-nft-buy-top-info {
+    top: 75px;
+    left: calc(50% - 75px) !important;
+    box-shadow: -3px 2px 5px rgba(0, 0, 0, 0.178);
+  }
+  .mv-buy-nft-name {
+    width: 100% !important;
+    margin-bottom: 80px;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+  }
+  .mv-buy-nft-name span {
+    left: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+    font-size: 26px;
+  }
+  .mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+    flex-direction: column;
+  }
+  .mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div {
+    padding: 0 10px;
+    border-right: none !important;
+    margin-bottom: 10px;
+  }
+  .mv-buy-main-top > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .mv-buy-nft-name {
+    font-size: 20px !important;
+    font-weight: 900;
+  }
+  .mv-buy-main-top > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+    font-size: 22px;
+  }
+}

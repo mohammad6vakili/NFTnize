@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.content {
+  max-width: 56.4rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 1.6rem 0 1.6rem;
+}
+
+.owner-badge {
+  margin-bottom: 1.7rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin: 0;
+  margin-bottom: 1.7rem;
+  color: var(--color-white);
+}
+
+.info {
+  color: #5e5e92;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.circle-shape {
+  position: absolute;
+  z-index: -1;
+  top: -10rem;
+  left: 50%;
+  transform: translateX(-20%);
+  opacity: 0.8;
+  height: 34.6rem;
+  width: 34.6rem;
+}
+
+.ground-shape {
+  position: absolute;
+  z-index: -2;
+  top: 100%;
+  opacity: 0.1;
+  width: 100%;
+  left: 0;
+
+  & div {
+    background: linear-gradient(to bottom, var(--bg-main-color), transparent);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.assets-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(41rem, 41rem));
+  grid-gap: 2.5rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.no-result {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}

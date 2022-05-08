@@ -1,0 +1,38 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  background: #0e0e22;
+  backdrop-filter: blur(1.6rem);
+  padding: 1.8rem 2.4rem;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include respond(xs) {
+    padding: 1rem 1.6rem;
+  }
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 6rem;
+
+  @include respond(xs) {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.blue-glow-text {
+  -webkit-text-stroke: 0.15rem var(--color-light-blue);
+  text-shadow: 0 0 0.6rem var(--color-light-blue);
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  @include respond(xs) {
+    font-size: 2rem;
+    margin-top: 10rem;
+  }
+}

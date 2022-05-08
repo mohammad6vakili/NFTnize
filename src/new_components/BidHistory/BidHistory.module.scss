@@ -1,0 +1,101 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  background: #0e0e22;
+  backdrop-filter: blur(1.6rem);
+  padding: 1.8rem 2.4rem;
+
+  @include respond(xs) {
+    padding: 1rem 1.6rem;
+  }
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-green);
+
+  @include respond(xs) {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.no-bid {
+  text-align: center;
+  padding: 1rem;
+  color: var(--color-light-blue);
+  font-size: 1.8rem;
+  text-shadow: 0 0 0.6rem var(--color-light-blue);
+  margin: 6rem 0;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 95rem;
+
+  & th {
+    padding: 1.7rem 2.5rem;
+    font-size: 1.3rem;
+    color: #7070ac;
+  }
+
+  & td {
+    font-size: 1.3rem;
+    padding: 2rem 2.5rem;
+    color: #e6e6f1;
+  }
+
+  & tbody tr {
+    background: linear-gradient(0deg, #191930 0%, rgba(22, 22, 47, 0) 100%);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.bid-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:hover {
+    color: var(--color-light-blue);
+    .share-icon {
+      color: var(--color-light-blue);
+    }
+  }
+
+  .share-icon {
+    margin-bottom: 0.3rem;
+    color: #e6e6f1;
+  }
+}
+
+.bid {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  .indicator {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 10rem;
+    background-color: var(--color-green);
+    display: block;
+    margin-left: 1rem;
+    &--hidden {
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+}

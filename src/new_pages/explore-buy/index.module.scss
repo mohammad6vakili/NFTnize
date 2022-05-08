@@ -1,0 +1,25 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  max-width: 139.2rem;
+  padding: 5rem 1.6rem;
+  margin: 0 auto;
+
+  & > * + * {
+    margin-top: 4.5rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32.3rem, 32.3rem));
+  grid-gap: 2.2rem;
+  justify-content: center;
+}
+
+.no-auctions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}

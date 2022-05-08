@@ -1,0 +1,96 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  background: #0e0e22;
+  backdrop-filter: blur(1.6rem);
+  padding: 1.8rem 2.4rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include respond(xs) {
+    padding: 1rem 1.6rem;
+  }
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+
+  @include respond(xs) {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+
+  & > * + * {
+    margin-top: 0.7rem;
+
+    @include respond(xs) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.item {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include respond(xs) {
+    padding: 0.5rem;
+  }
+
+  &__avatar {
+    height: 3.5rem;
+    width: 3.5rem;
+    object-fit: cover;
+    margin-right: 1.4rem;
+    border-radius: 10rem;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-row: auto auto;
+    grid-gap: 1rem;
+    width: 100%;
+    font-size: 1.3rem;
+
+    @include respond(xs) {
+      font-size: 1.2rem;
+    }
+
+    & span:nth-child(1) {
+      font-weight: 500;
+    }
+
+    & span:nth-child(2) {
+      color: var(--color-light-blue);
+    }
+
+    & span:nth-child(3),
+    & span:nth-child(4) {
+      color: #67677e;
+    }
+  }
+}
+
+.see-more {
+  font-size: 1.3rem;
+  color: #7070ac;
+
+  &:hover {
+    color: #7070ac;
+    text-decoration: none;
+  }
+}

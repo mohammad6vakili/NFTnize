@@ -1,0 +1,23 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  padding: 5rem 1.6rem 7rem 1.6rem;
+
+  & > * + * {
+    margin-top: 4.5rem;
+  }
+
+  @include respond(xs) {
+    padding: 2rem 1.6rem 5rem 1.6rem;
+  }
+}
+
+.form {
+  // margin-bottom: 26rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}

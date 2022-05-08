@@ -1,0 +1,77 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  margin-bottom: 2.9rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  & > span {
+    font-size: 1.6rem;
+    color: var(--color-white);
+
+    @include respond(xs) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+
+  & > span {
+    font-size: 1.6rem;
+    color: var(--color-white);
+    margin-right: 1.4rem;
+
+    @include respond(xs) {
+      font-size: 1.2rem;
+      margin-right: 0;
+    }
+  }
+
+  & select {
+    background: none;
+    color: (--color-purple-light);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    padding-right: 1rem;
+
+    @include respond(xs) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.sort-dropdown {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.popover-content {
+  background: var(--color-blue) !important;
+  filter: drop-shadow(0 0 0.3rem var(--color-light-blue));
+  border-radius: 3px;
+}
+
+.sortMenu {
+  background: none !important;
+  color: var(--color-white-dark) !important;
+  min-width: 100px !important;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem !important;
+  &:hover {
+    cursor: pointer;
+    color: var(--color-light-blue) !important;
+  }
+}
+
+.blueGlowText {
+  color: var(--color-light-blue) !important;
+}

@@ -1,0 +1,52 @@
+.button {
+  padding: 1.5rem 4rem;
+  font-size: 1.5rem;
+  border: 0.15rem solid var(--color-light-blue);
+  background: none;
+  background-color: var(--bg-main-color);
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.3rem var(--color-light-blue));
+  color: var(--color-white);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--color-light-blue);
+    color: black;
+  }
+
+  &:focus {
+    outline: unset;
+  }
+
+  & svg {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 1rem;
+  }
+}
+
+// styles
+.minimal {
+  border: 0.15rem solid #252544;
+  font-weight: bold;
+  filter: unset;
+  padding: 1.4rem 2.4rem;
+}
+
+// statuses
+.disabled,
+.disabled:hover {
+  cursor: not-allowed;
+  background-color: #313157;
+  color: #6363af !important;
+  filter: none;
+  border-color: #313157;
+}
+
+// accents
+.pink {
+  color: var(--color-green);
+}

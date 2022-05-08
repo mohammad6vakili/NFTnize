@@ -1,0 +1,29 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  max-width: 111.2rem;
+  padding: 5rem 1.6rem;
+  margin: 0 auto;
+
+  & > * + * {
+    margin-top: 4.5rem;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+
+  @include respond(sm) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+}
+
+.no-assets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-green);
+}

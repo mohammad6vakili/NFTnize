@@ -1,0 +1,134 @@
+.asset {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(208.01deg, #14143d 8.59%, #101029 92.31%);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    z-index: 1;
+    box-shadow: -0.4rem 0.4rem 0 var(--color-green);
+    cursor: pointer;
+
+    & .overlay {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+
+      & button {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+// loading
+.asset-loading {
+  @extend .asset;
+  @extend .no-hover;
+}
+
+// no hover
+.no-hover {
+  &:hover {
+    box-shadow: none;
+    cursor: default;
+    & .overlay {
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.figure {
+  height: 32.2rem;
+  position: relative;
+}
+.hide_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+
+  & button {
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0.1s;
+    transform: translateY(1rem);
+  }
+}
+
+.info {
+  padding: 2rem;
+  &:hover {
+    text-decoration: none;
+  }
+}
+a:hover {
+  text-decoration: none;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+
+  & span:nth-child(1) {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: var(--color-light-blue);
+  }
+
+  & span:nth-child(2) {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+
+    & svg {
+      height: 1.6rem;
+      width: auto;
+      margin-right: 0.4rem;
+    }
+  }
+}
+
+.owner {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.8rem;
+}

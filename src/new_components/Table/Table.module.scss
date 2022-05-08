@@ -1,0 +1,29 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 95rem;
+
+  & th {
+    padding: 1.7rem 2.5rem;
+    font-size: 1.3rem;
+    color: #7070ac;
+  }
+
+  & td {
+    font-size: 1.3rem;
+    padding: 2rem 2.5rem;
+    color: #e6e6f1;
+  }
+
+  & tbody tr {
+    background: linear-gradient(0deg, #191930 0%, rgba(22, 22, 47, 0) 100%);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+// loading
+.table-loading {
+  width: 100%;
+  min-width: 95rem;
+}

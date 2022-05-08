@@ -1,0 +1,150 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  width: 100%;
+  position: relative;
+  padding: 7.7rem 1.6rem 6.8rem 1.6rem;
+
+  @include respond(sm) {
+    padding: 6rem 2rem;
+    padding-bottom: 8rem;
+  }
+
+  @include respond(xs) {
+    padding: 4rem 2rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  @include respond(sm) {
+    max-width: 60rem;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 1;
+  letter-spacing: -0.5rem;
+  color: var(--bg-main-color);
+  display: block;
+  -webkit-text-stroke: 0.15rem var(--color-light-blue);
+  text-shadow: 0 0 0.6rem var(--color-light-blue);
+  margin-bottom: 3rem;
+  text-align: center;
+
+  @include respond(sm) {
+    font-size: 8rem;
+  }
+
+  @include respond(xs) {
+    font-size: 5rem;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: 4.3rem;
+
+  @include respond(xs) {
+    margin-bottom: 3rem;
+  }
+}
+
+.wave {
+  color: var(--color-green);
+  position: absolute;
+  z-index: -2;
+  bottom: -14rem;
+  opacity: 0.3;
+  width: 100%;
+  left: 0;
+
+  & > svg {
+    height: 41rem;
+    width: 100%;
+  }
+
+  & > div {
+    background: linear-gradient(to bottom, transparent, var(--bg-main-color));
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.terms {
+  max-width: 111.2rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+
+  h2 {
+    color: var(--color-green);
+    margin: 4rem 0 3rem 0;
+    font-size: 3rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    @include respond(xs) {
+      font-size: 2.5rem;
+      margin: 3rem 0 2rem 0;
+    }
+  }
+
+  h3 {
+    margin: 3rem 0;
+    font-size: 2.3rem;
+    color: var(--color-white-dark);
+
+    @include respond(xs) {
+      font-size: 1.8rem;
+      margin: 2rem 0;
+    }
+  }
+
+  h4 {
+    margin: 1.3rem 0;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    font-weight: bold;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    @include respond(xs) {
+      font-size: 1.6rem;
+      margin: 1rem 0;
+    }
+  }
+
+  ul {
+    list-style-position: initial;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+  a {
+    color: var(--color-light-blue);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p:last-of-type {
+    margin: 0;
+  }
+}

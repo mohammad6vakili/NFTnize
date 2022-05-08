@@ -1,0 +1,43 @@
+.table-container {
+  max-height: 50rem;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+
+  & th,
+  td {
+    padding: 1.5rem 0.8rem;
+  }
+
+  & th {
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-bottom: 0.1rem solid #9c9c9c;
+  }
+
+  & td {
+    font-size: 1.5rem;
+
+    & a {
+      text-underline-offset: 0.2rem;
+      font-weight: 500;
+    }
+  }
+
+  & tr {
+    border-bottom: 0.1rem solid #444444;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background: #1f1f1f;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}

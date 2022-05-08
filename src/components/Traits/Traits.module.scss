@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+    background-color: var(--color-white-dark);
+  }
+}
+
+.title {
+  font-size: 2.3rem;
+  white-space: nowrap;
+  margin: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.trait {
+  padding: 2rem;
+  border-radius: 1.3rem;
+  background-color: #1a2028;
+  border: 0.1rem solid #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.trait-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.trait-value {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  color: #c7c7c7;
+}
+
+.trait-statics {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(170, 170, 170);
+}
+
+.trait-progress-bar {
+  height: 0.4rem;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #464646;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.trait-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #8b8b8b;
+  display: block;
+}

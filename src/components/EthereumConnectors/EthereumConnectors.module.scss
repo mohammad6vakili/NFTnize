@@ -1,0 +1,231 @@
+@import "styles/abstract/mixins";
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content-piece img {
+  max-width: 50%;
+}
+.wallet-option-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+
+  li {
+    & button {
+      padding: 2rem 4rem;
+      font-size: 1.5rem;
+      border: 0.15rem solid var(--color-light-blue) !important;
+      background: none;
+      background-color: var(--bg-main-color);
+      cursor: pointer;
+      // filter: drop-shadow(0 0 0.3rem var(--color-light-blue));
+      color: var(--color-white);
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+}
+.wallet-option {
+  display: flex;
+  align-items: center;
+  .wallet-branding {
+    width: 2em;
+    margin-right: 0.5em;
+    background-color: transparent;
+  }
+
+  & h5 {
+    color: var(--color-white-dark);
+  }
+}
+
+.content-info ul {
+  list-style-type: none;
+}
+
+.content-info li {
+  margin: 2px;
+}
+
+.content-collection {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content-collection-item {
+  width: 30em;
+  margin: 2em;
+}
+
+.content-collection-item img {
+  max-width: 100%;
+}
+
+.extra-prop-list {
+  list-style: none;
+}
+
+.extra-prop-item {
+  padding: 0.1em;
+}
+
+.extra-prop-item input {
+  margin: 0.1em;
+}
+
+.extra-prop-add {
+  justify-self: right;
+}
+
+.extra-prop-dropdown {
+  flex-direction: column;
+}
+
+.container-mint {
+  justify-content: flex-end;
+}
+
+.wallets-dropdown {
+  color: var(--color-white-dark) !important;
+  background: none !important;
+  outline: none !important;
+  svg {
+    color: var(--color-light-blue);
+  }
+}
+
+.popover-content {
+  background: var(--color-blue) !important;
+  filter: drop-shadow(0 0 0.3rem var(--color-light-blue));
+  border-radius: 3px;
+}
+
+.walletMenu {
+  background: none !important;
+  color: var(--color-white-dark) !important;
+  min-width: 100px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+    color: var(--color-light-blue) !important;
+  }
+}
+
+.blueGlowText {
+  color: var(--color-light-blue) !important;
+}
+
+.dialog {
+  background-color: var(--color-blue);
+  color: var(--color-white-dark);
+  border: none;
+  overflow: hidden;
+  padding-bottom: 0;
+  // box-shadow: 0px 0px 1.1rem #ff39b0;
+  box-shadow: 0px 0px 1.1rem var(--color-green);
+  border-radius: 1.4rem;
+
+  h3 {
+    color: var(--color-light-blue);
+  }
+
+  & > div:first-of-type {
+    background-color: var(--color-blue);
+    border-bottom: unset;
+    padding: 1.3rem 1.3rem 1.3rem 2rem;
+
+    & h4 {
+      color: var(--color-white-dark);
+    }
+
+    & svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+
+  @include respond(xs) {
+    max-width: calc(100% - 20px);
+  }
+}
+
+.dialog-title {
+  color: var(--color-light-blue);
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.buttonPink {
+  color: var(--color-green) !important;
+  outline: var(--color-green) !important;
+  border-color: var(--color-green) !important;
+  border: 0.15rem solid var(--color-green);
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.3rem var(--color-green-light));
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--color-green-light) !important;
+  }
+}
+
+.noOutline {
+  outline: none !important;
+  border: none !important;
+  &:hover {
+    background: none !important;
+    span {
+      color: var(--color-green) !important;
+    }
+  }
+}
+
+.disconnect {
+  @include respond(xs) {
+    display: none;
+  }
+}
+
+.linkTo {
+  background: none !important;
+  outline: none;
+  span {
+    color: var(--color-white-dark) !important;
+    &:hover {
+      color: var(--color-green) !important;
+    }
+  }
+}
+
+.themeButton {
+  margin-left: 24px;
+  padding: 10px;
+
+  span {
+    display: flex;
+  }
+  img {
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &:focus {
+    outline: unset;
+    border: unset;
+  }
+}

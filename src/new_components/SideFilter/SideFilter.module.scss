@@ -1,0 +1,142 @@
+@import "new_styles/abstract/mixins";
+
+.filters {
+  padding: 2rem;
+  background: linear-gradient(208.01deg, #14143d 8.59%, #101029 92.31%);
+  border-radius: 0.3rem;
+
+  @include respond(sm) {
+    padding: 1.3rem;
+  }
+}
+
+.title {
+  button {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: none;
+    border: none;
+    font-weight: bold;
+    width: 100%;
+    transition: all 300ms ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include respond(sm) {
+      font-size: 2rem;
+      margin-bottom: 0rem;
+    }
+
+    svg {
+      height: 1.6rem;
+      width: 1.6rem;
+      transition: all 300ms ease-in-out;
+      display: none;
+
+      @include respond(sm) {
+        display: block;
+      }
+    }
+  }
+
+  &--open {
+    button {
+      margin-bottom: 2rem;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+  @include respond(sm) {
+    margin-bottom: 2rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    button {
+      font-size: 1.8rem;
+      margin-bottom: 1.4rem;
+      color: var(--color-light-blue);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      width: 100%;
+      background: none;
+      border: none;
+
+      @include respond(sm) {
+        font-size: 1.5rem;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      svg {
+        height: 1.8rem;
+        width: 1.8rem;
+        transition: all 300ms ease-in-out;
+
+        @include respond(sm) {
+          height: 1.4rem;
+          width: 1.4rem;
+        }
+      }
+    }
+
+    &--open {
+      button svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    label {
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      input {
+        margin-right: 1rem;
+        accent-color: var(--color-light-blue);
+        height: 1.6rem;
+        width: 1.6rem;
+        cursor: pointer;
+      }
+    }
+    span {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

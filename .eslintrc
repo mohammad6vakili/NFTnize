@@ -1,0 +1,81 @@
+{
+  "root": true,
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "react-hooks"],
+  "rules": {
+    "jsx-a11y/media-has-caption": "off",
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "jsx-a11y/control-has-associated-label": 0,
+    "no-underscore-dangle": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "react/no-array-index-key": 0,
+    "react/no-unescaped-entities": 0,
+    "jsx-a11y/label-has-for": 0,
+    "no-unused-vars": "warn",
+    "no-alert": 0,
+    "no-debugger": 0,
+    "no-use-before-define": 0,
+    "import/no-unresolved": 0,
+    "import/newline-after-import": "error",
+    "import/order": "off",
+    "quotes": ["off", "single"],
+    "jsx-quotes": ["off", "prefer-single"],
+    "eol-last": ["error", "always"],
+    "jsx-a11y/label-has-associated-control": "off",
+    "comma-dangle": ["off", "always-multiline"],
+    "react-hooks/rules-of-hooks": "error",
+    "no-else-return": "off",
+    "no-param-reassign": "off",
+    "no-console": "off",
+    "consistent-return": "off",
+    "no-nested-ternary": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/no-cycle": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "prefer-destructuring": ["error", {
+      "array": false,
+      "object": false
+    }, {
+      "enforceForRenamedProperties": false
+    }],
+    "max-classes-per-file": ["error", 3]
+  },
+  "overrides": [
+    {
+      "files": "*.js",
+      "rules": {
+        "import/prefer-default-export": 0
+      }
+    }
+  ],
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true,
+    "fetch": true,
+    "alert": true,
+    "File": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

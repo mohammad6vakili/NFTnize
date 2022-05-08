@@ -1,0 +1,17 @@
+@import "new_styles/abstract/mixins";
+
+.blueText {
+  color: var(--color-light-blue) !important;
+  margin: 0 !important;
+}
+
+.pinkText {
+  color: var(--color-green) !important;
+  margin: 0 !important;
+  font-weight: bold;
+}
+
+.whiteText {
+  color: white !important;
+  margin: 0 !important;
+}

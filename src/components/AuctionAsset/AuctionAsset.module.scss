@@ -1,0 +1,64 @@
+.asset {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+  background-color: #1a2028;
+  border: 0.1rem solid #2e2e2e;
+
+  .image-container {
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    margin-right: 2rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+
+    & > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+
+  & > img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    border-radius: 10rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.price {
+  border-radius: 0.8rem;
+  border: 0.2rem solid var(--color-green);
+  padding: 0.4rem 0.7rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.number {
+  color: #838383;
+}

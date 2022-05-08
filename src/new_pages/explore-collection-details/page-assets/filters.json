@@ -1,0 +1,112 @@
+{
+  "Gen": [
+    {
+      "key": "1st",
+      "value": 1
+    }
+  ],
+  "Color": [
+    {
+      "key": "138938",
+      "value": 1
+    },
+    {
+      "key": "138938",
+      "value": 1
+    },
+    {
+      "key": "138938",
+      "value": 1
+    },
+    {
+      "key": "138938",
+      "value": 1
+    },
+    {
+      "key": "138938",
+      "value": 1
+    },
+    {
+      "key": "138938",
+      "value": 1
+    }
+  ],
+  "Background": [
+    {
+      "key": "Mountain",
+      "value": 1
+    },
+    {
+      "key": "Color",
+      "value": 1
+    },
+    {
+      "key": "Jungle",
+      "value": 1
+    },
+    {
+      "key": "Desert",
+      "value": 1
+    },
+    {
+      "key": "Foundry",
+      "value": 1
+    },
+    {
+      "key": "Beach",
+      "value": 1
+    }
+  ],
+  "Body": [
+    {
+      "key": "Pink",
+      "value": 1
+    },
+    {
+      "key": "Chocolate",
+      "value": 1
+    },
+    {
+      "key": "Berry",
+      "value": 1
+    },
+    {
+      "key": "Pupple",
+      "value": 1
+    },
+    {
+      "key": "Foundry",
+      "value": 1
+    },
+    {
+      "key": "Rainbow",
+      "value": 1
+    }
+  ],
+  "Left Hand": [
+    {
+      "key": "Empty",
+      "value": 1
+    },
+    {
+      "key": "Sword",
+      "value": 1
+    },
+    {
+      "key": "GlowStick",
+      "value": 1
+    },
+    {
+      "key": "Hammer",
+      "value": 1
+    },
+    {
+      "key": "Balloon",
+      "value": 1
+    },
+    {
+      "key": "Spear",
+      "value": 1
+    }
+  ]
+}

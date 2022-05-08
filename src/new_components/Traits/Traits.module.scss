@@ -1,0 +1,125 @@
+@import "styles/abstract/mixins";
+
+.container {
+  background: rgba(22, 22, 44, 0.75);
+  backdrop-filter: blur(1.6rem);
+  padding: 1.8rem 2.4rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.7rem;
+  width: 100%;
+
+  @include respond(xs) {
+    display: block;
+
+    &__right {
+      margin-top: 2rem;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--color-green);
+    margin-bottom: 0.7rem;
+  }
+
+  &__rank {
+    font-size: 1.5rem;
+    color: #9b9bba;
+
+    & span {
+      color: var(--color-light-blue);
+      font-weight: 600;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    & span:nth-child(1) {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-right: 1rem;
+      color: var(--color-white);
+      background-color: var(--color-green);
+      padding: 0.3rem 0.9rem;
+    }
+
+    & span:nth-child(2) {
+      font-size: 2rem;
+      font-weight: bold;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.8rem;
+  list-style: none;
+
+  @include respond(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include respond(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.trait {
+  display: flex;
+  flex-direction: column;
+  background-color: #16162f;
+  padding: 1rem 1.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+
+    & span {
+      font-size: 1.3rem;
+      font-weight: normal;
+    }
+
+    & span:nth-child(2) {
+      text-align: right;
+      color: var(--color-light-blue);
+    }
+  }
+
+  &__progress-bar {
+    height: 0.3rem;
+    border-radius: 2.6rem;
+    background-color: #27273f;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+
+  &__progress {
+    height: 100%;
+    background-color: var(--color-light-blue);
+  }
+
+  &__progress-percent {
+    font-size: 1.3rem;
+    color: #67677e;
+  }
+}

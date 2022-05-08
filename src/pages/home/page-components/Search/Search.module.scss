@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  padding: 6rem;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(182, 244, 146, 0.404),
+    rgba(51, 139, 147, 0.425)
+  );
+  // background-image: radial-gradient(
+  //   circle farthest-corner at 10% 20%,
+  //   rgba(253, 193, 104, 0.4) 0%,
+  //   rgba(251, 128, 128, 0.4) 90%
+  // );
+
+  & h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+  }
+
+  & span {
+    margin-bottom: 3.5rem;
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #1a2028;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1rem;
+  // border: 0.1rem solid #6d6d6d;
+
+  & > svg {
+    height: 2.2rem;
+    width: 2.2rem;
+    color: #b3b3b3;
+  }
+}
+
+.input {
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}

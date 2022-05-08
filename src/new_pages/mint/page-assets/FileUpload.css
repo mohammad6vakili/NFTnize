@@ -1,0 +1,96 @@
+.mv-file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.mv-file-upload-show-file-box {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #000000;
+}
+.mv-file-upload-infos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10%;
+}
+.mv-file-upload-infos > div:nth-child(1),
+.mv-file-upload-infos > div:nth-child(3) {
+  color: #707070;
+  font-size: 12px;
+}
+.mv-file-upload-infos > div:nth-child(2),
+.mv-file-upload-infos > div:nth-child(4) {
+  background-color: #000000;
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  margin: 5px 0;
+height: 35px;
+  padding: 5px 10px;
+  border-radius: 0px 0px 6px 6px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mv-upload-file-clear {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 17px;
+  cursor: pointer;
+}
+.mv-fileupload-click-to-upload{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 40%;
+}
+/* -----------------------------light theme------------------------------------ */
+.mv-file-upload-show-file-box-light {
+  background-color: #ededed !important;
+}
+.mv-file-upload-infos-light {
+  color: white !important;
+}
+.mv-fileupload-click-to-upload-light{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 40%;    
+  }
+/* -----------------------------media queries------------------------------------ */
+@media only screen and (max-width:1350px){
+  .mv-file-upload-show-file-box {
+    height: 250px;
+  }
+}
+@media only screen and (max-width:1200px){
+  .mv-file-upload-show-file-box {
+    height: 220px;
+  }
+}
+@media only screen and (max-width:1050px){
+  .mv-file-upload{
+    min-height: 330px !important;
+  }
+  .mv-upload-file-clear{
+    top: 10px;
+  }
+  .mv-file-upload-show-file-box{
+    height:250px !important;
+  }
+  .mv-fileupload-click-to-upload-light,
+  .mv-fileupload-click-to-upload{
+    margin-top: 15px;
+  }
+}

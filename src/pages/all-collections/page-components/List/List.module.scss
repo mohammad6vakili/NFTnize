@@ -1,0 +1,17 @@
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(63rem, 1fr));
+  grid-gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.loader {
+  display: block;
+  text-align: center;
+  padding: 2rem 1.6rem 3rem 1.6rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}

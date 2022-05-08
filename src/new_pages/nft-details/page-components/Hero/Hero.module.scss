@@ -1,0 +1,456 @@
+@import "new_styles/abstract/mixins";
+
+.container {
+  position: relative;
+  margin-top: 8rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // max-width: 139.2rem;
+  padding: 6.6rem 1.6rem 13rem 1.6rem;
+  margin: 0 auto;
+  max-width: 108rem;
+
+  @include respond(md) {
+    padding: 4.5rem 1.6rem 10rem 1.6rem;
+  }
+
+  @include respond(sm) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 3rem 1.6rem 7rem 1.6rem;
+  }
+}
+
+.info {
+  margin-right: 3.5rem;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include respond(md) {
+    flex-shrink: 1;
+  }
+
+  @include respond(sm) {
+    margin-right: 0;
+    order: 1;
+  }
+
+  &__link {
+    &:hover {
+      & span {
+        color: var(--color-light-blue);
+      }
+    }
+  }
+
+  &__owner {
+    margin-bottom: 1.3rem;
+    background: rgba(132, 132, 132, 0.48);
+  }
+
+  &__title {
+    margin: 0;
+    color: var(--color-green);
+    margin-bottom: 1rem;
+    font-size: 3.4rem;
+    min-width: 30rem;
+    max-width: 40rem;
+
+    &_text {
+      margin-right: 1rem;
+    }
+
+    @include respond(md) {
+      font-size: 3rem;
+    }
+
+    @include respond(xs) {
+      font-size: 2.7rem;
+    }
+
+    svg {
+      width: 2.6rem;
+      height: 2.6rem;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    max-width: 43.3rem;
+    margin: 0;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+
+    @include respond(md) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(md) {
+      max-width: unset;
+    }
+  }
+
+  &__divider {
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #252540;
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    // display: flex;
+    // align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    @include respond(sm) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(xs) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    min-width: 170px;
+
+    & button {
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      cursor: pointer;
+      margin-left: 1rem;
+
+      & svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-right: 0;
+      }
+    }
+
+    & span:nth-child(1) {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      display: block;
+      color: var(--color-light-blue);
+
+      @include respond(md) {
+        font-size: 1.4rem;
+      }
+    }
+
+    & span:nth-child(2) {
+      font-size: 1.8rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      @include respond(md) {
+        font-size: 1.6rem;
+      }
+
+      & svg {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        color: var(--color-light-blue);
+      }
+    }
+  }
+  &__value {
+    margin-bottom: 0 !important;
+    color: white !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__address:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+  }
+  &__btn {
+    align-self: stretch;
+
+    @include respond(sm) {
+      align-self: center;
+      max-width: 40rem;
+      width: 100%;
+    }
+  }
+}
+
+.figures {
+  display: flex;
+
+  @include respond(sm) {
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  & > svg {
+    margin-right: 4.5rem;
+    width: 4.7rem;
+    height: 4.7rem;
+    color: var(--color-green);
+    margin-top: 15rem;
+
+    @include respond(md) {
+      margin-right: 3rem;
+      margin-top: 13rem;
+    }
+
+    @include respond(sm) {
+      display: none;
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    position: relative;
+    margin-bottom: 1.6rem;
+    cursor: pointer;
+
+    img {
+      height: 55.3rem;
+      width: 44rem;
+      object-fit: cover;
+
+      @include respond(md) {
+        height: 48.9rem;
+        width: 38.8rem;
+      }
+
+      @include respond(xs) {
+        height: 39.5rem;
+        width: 31.4rem;
+      }
+
+      &:nth-child(1) {
+        z-index: 2;
+        transform: rotate(2deg);
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        opacity: 0.3;
+        transform: rotate(-2deg);
+      }
+    }
+
+    video {
+      height: 55.3rem;
+      width: 44rem;
+      object-fit: cover;
+
+      @include respond(md) {
+        height: 48.9rem;
+        width: 38.8rem;
+      }
+
+      @include respond(xs) {
+        height: 39.5rem;
+        width: 31.4rem;
+      }
+
+      &:nth-child(1) {
+        z-index: 2;
+        transform: rotate(2deg);
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        opacity: 0.3;
+        transform: rotate(-2deg);
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * + * {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__action {
+    color: #a2a2be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.8rem;
+    width: 3.8rem;
+    background: none;
+    cursor: pointer;
+    border: 0.15rem solid #a2a2be;
+    border-radius: 10rem;
+    opacity: 0.8;
+
+    & svg {
+      height: 2rem;
+      width: 2rem;
+      transform: translateY(1px);
+    }
+  }
+}
+
+.landscape-image {
+  height: auto !important;
+}
+
+// loading
+.hero-loading {
+  @extend .hero;
+
+  &__info {
+    @extend .info;
+    margin-right: 9.2rem;
+    display: unset;
+
+    @include respond(sm) {
+      margin-right: 0;
+      height: 35.2rem;
+
+      & svg {
+        height: 35.2rem;
+      }
+    }
+  }
+
+  &__figures {
+    @include respond(sm) {
+      justify-content: center;
+      margin-bottom: 3rem;
+
+      @include respond(sm) {
+        height: 45.4rem;
+
+        & svg {
+          height: 45.4rem;
+        }
+      }
+    }
+  }
+}
+
+.hover_pink_button {
+  &:hover {
+    color: var(--color-green);
+    outline: var(--color-green);
+    border-color: var(--color-green);
+    border: 0.15rem solid var(--color-green);
+    filter: drop-shadow(0 0 0.3rem var(--color-green));
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.pink_button {
+  color: var(--color-green);
+  outline: var(--color-green);
+  border-color: var(--color-green);
+  border: 0.15rem solid var(--color-green);
+  filter: drop-shadow(0 0 0.3rem var(--color-green));
+}
+
+.hover_blue_button {
+  &:hover {
+    color: var(--color-light-blue);
+    outline: var(--color-light-blue);
+    border-color: var(--color-light-blue);
+    border: 0.15rem solid var(--color-light-blue);
+    filter: drop-shadow(0 0 0.3rem var(--color-light-blue));
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.blue_button {
+  color: var(--color-light-blue);
+  outline: var(--color-light-blue);
+  border-color: var(--color-light-blue);
+  border: 0.15rem solid var(--color-light-blue);
+  filter: drop-shadow(0 0 0.3rem var(--color-light-blue));
+}
+
+.ground-shape {
+  position: absolute;
+  z-index: -2;
+  bottom: 0rem;
+  opacity: 0.1;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+
+  & div {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-main-color),
+      var(--bg-main-color),
+      transparent,
+      var(--bg-main-color)
+    );
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  & svg {
+    transform: scale(1.2);
+  }
+}
+.hide_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blueColor {
+  color: var(--color-light-blue);
+}
+
+.pinkColor {
+  color: var(--color-green);
+}
